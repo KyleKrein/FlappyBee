@@ -1,0 +1,108 @@
+Scene: Untitled
+Entities:
+  - Entity: 7698185087431459638
+    TagComponent:
+      Tag: Entity
+    TransformComponent:
+      Translation: [0, 0, 0]
+      Rotation: [0, -0, 0]
+      Scale: [1, 1, 1]
+    ScriptComponent:
+      FullName: FlappyBee.LevelManager
+    HierarchyComponent:
+      []
+  - Entity: 8922872380527663360
+    TagComponent:
+      Tag: Player
+    TransformComponent:
+      Translation: [0, 0, 0]
+      Rotation: [3.1415925, -8.74227766e-08, 3.1415925]
+      Scale: [1, 1, 1]
+    ScriptComponent:
+      FullName: FlappyBee.Player
+      Fields:
+        - Name: SpeedY
+          Type: float
+          Data: 3
+        - Name: TimeOfGoingUp
+          Type: float
+          Data: 0.100000001
+        - Name: SpeedX
+          Type: float
+          Data: 4
+        - Name: SpeedInGoingUp
+          Type: float
+          Data: 15
+    SpriteRendererComponent:
+      Color: [1, 1, 1, 1]
+      Has Texture: true
+      Texture: [6870232869851835461, 16103462268398656625]
+      Tiling Factor: 1
+    HierarchyComponent:
+      []
+  - Entity: 2651559566044861519
+    TagComponent:
+      Tag: Camera
+    TransformComponent:
+      Translation: [0, 0, -8.39999962]
+      Rotation: [0, -0, 0]
+      Scale: [1, 1, 1]
+    CameraComponent:
+      Camera:
+        ProjectionType: 1
+        PerspectiveVerticalFOV: 0.785398185
+        PerspectiveNearClip: 0.00999999978
+        PerspectiveFarClip: 1000
+        OrthographicSize: 10
+        OrthographicNearClip: 1
+        OrthographicFarClip: 20
+        AspectRatio: 1.99232459
+      Primary: true
+      FixedAspectRatio: false
+    ScriptComponent:
+      FullName: FlappyBee.Camera
+    HierarchyComponent:
+      - 1033889490517574116
+  - Entity: 1033889490517574116
+    TagComponent:
+      Tag: Score
+    TransformComponent:
+      Translation: [-8.44116402, 3.54266453, 1.90734863e-06]
+      Rotation: [0, -0, 0]
+      Scale: [1, 1, 1]
+    ScriptComponent:
+      FullName: FlappyBee.Score
+      Fields:
+        - Name: ScoreNumber
+          Type: int
+          Data: 0
+    TextRendererComponent:
+      Text: "Score: 0"
+      Font: [0, 328465234592345234]
+      Foreground Color: [0, 0, 0, 1]
+      Background Color: [0, 0, 0, 0]
+      Kerning: 0
+      Line Spacing: 0
+    HierarchyComponent:
+      []
+  - Entity: 8186584491271362874
+    TagComponent:
+      Tag: ObstacleGenerator
+    TransformComponent:
+      Translation: [0, 0, 0]
+      Rotation: [0, -0, 0]
+      Scale: [1, 1, 1]
+    ScriptComponent:
+      FullName: FlappyBee.ObstacleGenerator
+      Fields:
+        - Name: ObstaclePrefab
+          Type: Prefab
+          Data: [6870232869851835461, 9261846947103901798]
+        - Name: Floor
+          Type: Prefab
+          Data: [6870232869851835461, 15591724984643305527]
+        - Name: TimeBeforeSpawn
+          Type: float
+          Data: 1
+    HierarchyComponent:
+      []

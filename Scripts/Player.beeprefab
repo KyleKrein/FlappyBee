@@ -1,0 +1,17 @@
+Entities:
+  - Entity: 13720744328494930332
+    TagComponent:
+      Tag: Player
+    TransformComponent:
+      Translation: [0, 0, 0]
+      Rotation: [-3.1415925, -8.74227766e-08, -3.1415925]
+      Scale: [1, 1, 1]
+    ScriptComponent:
+      FullName: ""
+    SpriteRendererComponent:
+      Color: [1, 1, 1, 1]
+      Has Texture: true
+      Texture: [6870232869851835461, 16103462268398656625]
+      Tiling Factor: 1
+    HierarchyComponent:
+      []

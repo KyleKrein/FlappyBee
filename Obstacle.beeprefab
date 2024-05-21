@@ -1,0 +1,15 @@
+Entities:
+  - Entity: 16211868438658180205
+    TagComponent:
+      Tag: Obstacle
+    TransformComponent:
+      Translation: [0, 0, -0.100000001]
+      Rotation: [0, -0, 0]
+      Scale: [0.5, 4, 1]
+    SpriteRendererComponent:
+      Color: [1, 1, 1, 1]
+      Has Texture: false
+      Texture: [11400392381538397975, 12512990913900775810]
+      Tiling Factor: 1
+    HierarchyComponent:
+      []

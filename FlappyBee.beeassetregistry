@@ -1,0 +1,22 @@
+Registry ID: 6870232869851835461
+Assets:
+  - Name: Player
+    Type: AssetType::Prefab
+    Handle: 9025175915019348579
+    FilePath: Scripts/Player.beeprefab
+  - Name: Obstacle
+    Type: AssetType::Prefab
+    Handle: 9261846947103901798
+    FilePath: Obstacle.beeprefab
+  - Name: Level
+    Type: AssetType::Scene
+    Handle: 11099607416909910652
+    FilePath: Scenes/Level.beescene
+  - Name: Floor
+    Type: AssetType::Prefab
+    Handle: 15591724984643305527
+    FilePath: Floor.beeprefab
+  - Name: player_bee
+    Type: AssetType::Texture2D
+    Handle: 16103462268398656625
+    FilePath: Assets/player_bee.png

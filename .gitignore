@@ -1,0 +1,5 @@
+.beeengine
+*.csproj
+obj
+beeengine
+*.sln
