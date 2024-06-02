@@ -6,6 +6,7 @@ namespace FlappyBee
 	public class LevelManager: Behaviour
 	{
 		private Scene m_ActiveScene;
+		public Scene GameOverScene;
 		void OnCreate()
 		{
 			m_ActiveScene = Scene.ActiveScene;
@@ -16,6 +17,11 @@ namespace FlappyBee
 			{
 				m_ActiveScene.Reset();
 			}
+		}
+
+		public void GameOver()
+		{
+			GameOverScene.SetActive();
 		}
 	}
 }

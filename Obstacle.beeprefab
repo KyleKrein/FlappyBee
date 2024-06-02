@@ -1,5 +1,5 @@
 Entities:
-  - Entity: 16211868438658180205
+  - Entity: 2615409726443699032
     TagComponent:
       Tag: Obstacle
     TransformComponent:
@@ -11,5 +11,16 @@ Entities:
       Has Texture: false
       Texture: [11400392381538397975, 12512990913900775810]
       Tiling Factor: 1
+    RigidBody2DComponent:
+      Type: Static
+      FixedRotation: false
+    BoxCollider2DComponent:
+      Type: Box
+      Offset: [0, 0]
+      Size: [0.5, 0.5]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+      RestitutionThreshold: 0.5
     HierarchyComponent:
       []

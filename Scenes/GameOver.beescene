@@ -1,0 +1,59 @@
+Scene: Untitled
+Entities:
+  - Entity: 5545276741509530381
+    TagComponent:
+      Tag: Sad Bee
+    TransformComponent:
+      Translation: [-0.183512628, -0.576753736, 0]
+      Rotation: [0, -0, 0]
+      Scale: [3, 3, 1]
+    SpriteRendererComponent:
+      Color: [1, 1, 1, 1]
+      Has Texture: true
+      Texture: [6870232869851835461, 17921220452278849837]
+      Tiling Factor: 1
+    HierarchyComponent:
+      []
+  - Entity: 4986251179778079244
+    TagComponent:
+      Tag: Game Over
+    TransformComponent:
+      Translation: [-2.3594532, 0.891346812, 0]
+      Rotation: [0, -0, 0]
+      Scale: [1, 1, 1]
+    ScriptComponent:
+      FullName: FlappyBee.GameOver
+      Fields:
+        - Name: LevelScene
+          Type: Scene
+          Data: [6870232869851835461, 11099607416909910652]
+    TextRendererComponent:
+      Text: Game over :c
+      Font: [0, 328465234592345234]
+      Foreground Color: [0, 0, 0, 1]
+      Background Color: [0, 0, 0, 0]
+      Kerning: 0
+      Line Spacing: 0
+    HierarchyComponent:
+      []
+  - Entity: 18299540001911650733
+    TagComponent:
+      Tag: Camera
+    TransformComponent:
+      Translation: [0, 0, -11.1000004]
+      Rotation: [0, -0, 0]
+      Scale: [1, 1, 1]
+    CameraComponent:
+      Camera:
+        ProjectionType: 0
+        PerspectiveVerticalFOV: 0.785398185
+        PerspectiveNearClip: 10000
+        PerspectiveFarClip: 0.00999999978
+        OrthographicSize: 10
+        OrthographicNearClip: 1
+        OrthographicFarClip: 1
+        AspectRatio: 1.69936705
+      Primary: true
+      FixedAspectRatio: false
+    HierarchyComponent:
+      []

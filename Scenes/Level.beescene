@@ -2,13 +2,17 @@ Scene: Untitled
 Entities:
   - Entity: 7698185087431459638
     TagComponent:
-      Tag: Entity
+      Tag: LevelManager
     TransformComponent:
       Translation: [0, 0, 0]
       Rotation: [0, -0, 0]
       Scale: [1, 1, 1]
     ScriptComponent:
       FullName: FlappyBee.LevelManager
+      Fields:
+        - Name: GameOverScene
+          Type: Scene
+          Data: [6870232869851835461, 5890090822744195987]
     HierarchyComponent:
       []
   - Entity: 8922872380527663360
@@ -16,28 +20,36 @@ Entities:
       Tag: Player
     TransformComponent:
       Translation: [0, 0, 0]
-      Rotation: [3.1415925, -8.74227766e-08, 3.1415925]
+      Rotation: [-3.1415925, -8.74227766e-08, -3.1415925]
       Scale: [1, 1, 1]
     ScriptComponent:
       FullName: FlappyBee.Player
       Fields:
-        - Name: SpeedY
-          Type: float
-          Data: 3
-        - Name: TimeOfGoingUp
-          Type: float
-          Data: 0.100000001
-        - Name: SpeedX
-          Type: float
-          Data: 4
         - Name: SpeedInGoingUp
           Type: float
           Data: 15
+        - Name: SpeedX
+          Type: float
+          Data: 4
+        - Name: SpeedY
+          Type: float
+          Data: 3
     SpriteRendererComponent:
       Color: [1, 1, 1, 1]
       Has Texture: true
       Texture: [6870232869851835461, 16103462268398656625]
       Tiling Factor: 1
+    RigidBody2DComponent:
+      Type: Dynamic
+      FixedRotation: false
+    BoxCollider2DComponent:
+      Type: Circle
+      Offset: [0, 0]
+      Size: [0.5, 0.400000006]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+      RestitutionThreshold: 0.5
     HierarchyComponent:
       []
   - Entity: 2651559566044861519
@@ -56,7 +68,7 @@ Entities:
         OrthographicSize: 10
         OrthographicNearClip: 1
         OrthographicFarClip: 20
-        AspectRatio: 1.99232459
+        AspectRatio: 1.69936705
       Primary: true
       FixedAspectRatio: false
     ScriptComponent:
@@ -95,14 +107,17 @@ Entities:
     ScriptComponent:
       FullName: FlappyBee.ObstacleGenerator
       Fields:
-        - Name: ObstaclePrefab
-          Type: Prefab
-          Data: [6870232869851835461, 9261846947103901798]
+        - Name: TimeBeforeSpawn
+          Type: float
+          Data: 0.200000003
+        - Name: WaitOnStartSeconds
+          Type: float
+          Data: 2
         - Name: Floor
           Type: Prefab
           Data: [6870232869851835461, 15591724984643305527]
-        - Name: TimeBeforeSpawn
-          Type: float
-          Data: 1
+        - Name: ObstaclePrefab
+          Type: Prefab
+          Data: [6870232869851835461, 4691799209124744492]
     HierarchyComponent:
       []

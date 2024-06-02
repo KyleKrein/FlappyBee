@@ -9,34 +9,22 @@ namespace FlappyBee
 		public float SpeedY = 0;
 		public float SpeedX = 0;
 		public float SpeedInGoingUp = 0;
-		public float TimeOfGoingUp = 0;
 		public event Action<TransformComponent> OnGoingRight;
-		private float m_TimeInGoingUp = 0;
-		private bool m_IsGoingUp = false;
 		void OnCreate()
 		{
 			m_Transform = GetComponent<TransformComponent>();
+			ThisEntity.OnCollisionStart += (sender, other) =>
+			{
+				var LevelManager = FindEntityByName("LevelManager")!.GetBehaviour<LevelManager>();
+				LevelManager!.GameOver();
+			};
 		}
 		void OnUpdate()
 		{
-			if (m_IsGoingUp)
-			{
-                m_Transform.Translation.Y += SpeedInGoingUp * Time.DeltaTime;
-				m_TimeInGoingUp += Time.DeltaTime;
-				if(m_TimeInGoingUp >= TimeOfGoingUp)
-				{
-					m_IsGoingUp = false;
-				}
-            }
-			else
-			{
-                m_Transform.Translation.Y -= SpeedY * Time.DeltaTime;
-            }
 			m_Transform.Translation.X += SpeedX * Time.DeltaTime;
 			if(Input.IsKeyDown(Key.Space))
 			{
-				m_IsGoingUp = true;
-				m_TimeInGoingUp = 0;
+				m_Transform.Translation.Y += SpeedInGoingUp * Time.DeltaTime;
 			}
 			OnGoingRight?.Invoke(m_Transform);
         }

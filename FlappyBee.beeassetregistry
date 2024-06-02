@@ -1,13 +1,17 @@
 Registry ID: 6870232869851835461
 Assets:
+  - Name: Obstacle
+    Type: AssetType::Prefab
+    Handle: 4691799209124744492
+    FilePath: Obstacle.beeprefab
+  - Name: GameOver
+    Type: AssetType::Scene
+    Handle: 5890090822744195987
+    FilePath: Scenes/GameOver.beescene
   - Name: Player
     Type: AssetType::Prefab
     Handle: 9025175915019348579
     FilePath: Scripts/Player.beeprefab
-  - Name: Obstacle
-    Type: AssetType::Prefab
-    Handle: 9261846947103901798
-    FilePath: Obstacle.beeprefab
   - Name: Level
     Type: AssetType::Scene
     Handle: 11099607416909910652
@@ -20,3 +24,7 @@ Assets:
     Type: AssetType::Texture2D
     Handle: 16103462268398656625
     FilePath: Assets/player_bee.png
+  - Name: SadBee
+    Type: AssetType::Texture2D
+    Handle: 17921220452278849837
+    FilePath: Assets/SadBee.png

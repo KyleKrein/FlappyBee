@@ -1,1 +1,2 @@
+gameOver: Game over :c
 score: "{score, plural, one{# Score few {# Score} many {# Score} other {# Score}}"
